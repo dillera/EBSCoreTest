@@ -1,14 +1,16 @@
 {
     "manifestVersion": 1,
     "deployments": {
-        "aspNetCoreWeb": [{
-                "name": "EBSCoreTest",
-                "parameters": {
-                    "appBundle": "site.zip",
-                    "iisPath": "/",
-                    "iisWebSite": "Default Web Site"
-                }
-            }
-        ]
+  
+      "aspNetCoreWeb": [
+        {
+          "name": "app",
+          "parameters": {
+            "appBundle": ".",
+            "iisPath": "/",
+            "iisWebSite": "Default Web Site"
+          }
+        }
+      ]
     }
-}
+  }
